@@ -1,35 +1,189 @@
-body { margin: 60px auto; width: 70%; }
+/* === Base === */
+body {
+  margin: 0;
+  padding: 60px 0 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1a1a1a;
+  color: #e8e0d4;
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+}
 
-a { text-decoration: none; color: #0B7A71; }
-a:hover { text-decoration: underline; color: #095c56; }
+/* === Accent Bar === */
+.accent-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #d4a855, #b8923a);
+  z-index: 1000;
+}
 
-p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
+/* === Links === */
+a { text-decoration: none; color: #d4a855; transition: color 0.2s ease; }
+a:hover { text-decoration: none; color: #e8c472; }
+
+/* === Typography === */
+p, ul { font-size: 1.5em; line-height: 1.6em; color: #e8e0d4; }
 ul li { margin-bottom: 0.3em; }
 
-h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
-h1 { font-size: 3em; }
-h2 { font-size: 2.4em; margin-top: 1.2em; }
-h3 { font-size: 1.8em; margin-top: 1em; color: #444; }
-h4 { font-size: 1.5em; margin-top: 0.8em; color: #555; }
+h1, h2, h3, h4 {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  color: #e8e0d4;
+  font-weight: 600;
+}
+h1 { font-size: 2.8em; letter-spacing: -0.02em; }
+h2 { font-size: 2em; margin-top: 1.4em; border-bottom: 1px solid #333; padding-bottom: 0.3em; }
+h3 { font-size: 1.6em; margin-top: 1em; color: #c4bdb2; }
+h4 { font-size: 1.3em; margin-top: 0.8em; color: #a09888; }
 
-nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
-nav ul li, footer ul li { display: inline; margin-right: 20px; }
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2em 0;
+}
 
-footer { border-top: 1px solid #d5d5d5; font-size: .8em; margin-top: 40px; padding-top: 10px; }
+/* === Navigation === */
+nav {
+  margin-bottom: 2em;
+}
+nav ul {
+  font-size: 0.9em;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+nav ul li {
+  display: inline;
+  margin-right: 24px;
+}
+nav ul li a {
+  color: #a09888;
+  padding-bottom: 2px;
+  transition: color 0.2s ease, border-bottom 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+nav ul li a:hover {
+  color: #d4a855;
+  border-bottom: 1px solid #d4a855;
+}
 
-/* Blog */
+/* === Footer === */
+footer {
+  border-top: 1px solid #333;
+  font-size: 0.8em;
+  margin-top: 60px;
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+footer ul {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 1em;
+  padding: 0;
+  list-style: none;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+footer ul li a {
+  color: #7a8a6e;
+  transition: color 0.2s ease;
+}
+footer ul li a:hover {
+  color: #d4a855;
+}
+
+/* === Homepage === */
+.row {
+  display: block;
+}
+.row h1 {
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+.row img {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 40px rgba(212, 168, 85, 0.06);
+  margin: 0 auto 1.5em;
+}
+
+/* === Blog === */
 ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
-ul.posts li { list-style: none; }
+ul.posts li {
+  list-style: none;
+  padding: 0.4em 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+ul.posts li:last-child { border-bottom: none; }
+ul.posts li span {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.8em;
+  color: #7a8a6e;
+}
 
-/* CV */
-.cv { margin: 0px 0px 60px; }
-.cv h1 { font-size: 3em; }
-.cv h2 { font-size: 2em; }
-.cv h3 { font-size: 1.6em; }
-.cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+/* === CV === */
+.cv { margin: 0 0 60px; }
+.cv h1 { font-size: 2.8em; }
+.cv h2 { font-size: 1.8em; }
+.cv h3 { font-size: 1.4em; }
+.cv address, .cv .download {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+}
 .cv address, .cv p { font-size: 1.2em; }
 .cv ul { font-size: 1.2em; }
-.cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+.cv .download {
+  float: right;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
 
-/* About */
+/* === About === */
 .about h2 { font-size: 2em; margin-top: 1.5em; }
+
+/* === Blockquotes (Principles) === */
+blockquote {
+  border-left: 3px solid #d4a855;
+  margin: 1.2em 0;
+  padding: 0.6em 1.2em;
+  color: #c4bdb2;
+  font-style: italic;
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+blockquote p {
+  font-size: 1em;
+  margin: 0;
+  color: inherit;
+}
+
+/* === Selection === */
+::selection {
+  background: rgba(212, 168, 85, 0.3);
+  color: #e8e0d4;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  body {
+    width: 90%;
+    padding-top: 40px;
+  }
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.6em; }
+  p, ul { font-size: 1.2em; }
+  nav ul li { margin-right: 14px; }
+  .row img { width: 100% !important; height: auto !important; }
+}
