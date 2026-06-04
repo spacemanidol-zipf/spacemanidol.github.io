@@ -6,6 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Personal website for Daniel Campos (spacemanidol.com), built with Jekyll and deployed to GitHub Pages. The site serves as a professional portfolio, publication archive, and blog.
 
+- **Publications**: https://scholar.google.com/citations?hl=en&user=nlHptm8AAAAJ&view_op=list_works&sortby=pubdate
+- **Twitter/X**: https://x.com/spacemanidol
+
 ## Build & Development Commands
 
 ```bash
