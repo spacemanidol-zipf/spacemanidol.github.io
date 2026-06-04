@@ -6,6 +6,11 @@ bin-release/
 
 # Other files and folders
 .settings/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
 
 # Executables
 *.swf

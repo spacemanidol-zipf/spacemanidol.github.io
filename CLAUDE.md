@@ -54,7 +54,13 @@ All pages use YAML front matter. Main sections:
 
 ### Style Conventions
 
-- Link color: teal `#0B7A71`
-- Container: 70% width, 60px top margin
-- Nav and footer use inline `<ul>` lists
+- **Theme**: Dark background `#1a1a1a`, cream text `#e8e0d4`, amber accent `#d4a855`, sage secondary `#7a8a6e`
+- **Typography**: IBM Plex Mono (headings/nav/footer), Source Serif 4 (body text)
+- Container: 70% width desktop, 90% mobile
+- Nav and footer use inline `<ul>` lists with monospace font
 - No JavaScript beyond Bootstrap dependencies
+
+### Content Rules
+
+- **Never use `&mdash;`** (em dashes) anywhere in the site. Use ` - ` (space-dash-space) instead.
+- No emojis unless explicitly requested
