@@ -1,0 +1,72 @@
+\documentclass[line,margin]{res}
+\usepackage{hyperref}
+\begin{document}
+\name{Daniel Campos}
+\address{\href{mailto:daniel.campos@zipf.ai}{daniel.campos@zipf.ai}}
+\href{https://spacemanidol.com/}{spacemanidol.com} | \href{https://scholar.google.com/citations?user=nlHptm8AAAAJ&hl=en}{Google Scholar} | \href{https://github.com/spacemanidol}{GitHub}
+\begin{resume}
+\section{EDUCATION}
+University of Illinois Urbana-Champaign (UIUC) - {\sl PhD Computer Science} 2020--2023 \\
+{\small Thesis: Efficient and Robust Web Scale Language Model Based Retrieval, Generation, and Understanding. Advisor: ChengXiang Zhai} \\
+University of Washington - {\sl MS Computational Linguistics} 2018--2020 \\
+{\small Thesis: Explorations in Curriculum Learning Methods for Training Language Models (2019---predating widespread adoption in LLM training)} \\
+Rensselaer Polytechnic Institute - {\sl BS Computer Science} 2011--2014
+
+\section{EXPERIENCE}
+{\sl Founder \& CEO} - Zipf AI \hfill 10/25--Present
+\begin{itemize} \itemsep -4pt
+\item Built agentic search platform with multi-agent retrieval-augmented pipelines that search, crawl, extract, and reason over web-scale evidence. Multi-provider LLM orchestration (Claude, Gemini, GPT) with structured output validation and prompt routing---enabling controlled experimentation across model capabilities for search and synthesis.
+\item Designed and shipped a closed-loop self-healing system for search agents: six failure detectors generate reward signals (information-gain score 0--100, helpfulness score, trust status), an LLM composer proposes spec mutations (search query rewrites, crawl target optimization, workflow graph restructuring), and a Bayesian-calibrated policy engine auto-applies high-confidence edits. 3,500+ auto-edits generated at 98\% success rate---RL trajectories in everything but gradient updates.
+\item Built evaluation infrastructure: dual-layer signal scoring (heuristic + LLM-judged), nugget-level fact extraction, intent relevance filtering, and chronic-issue escalation. 75\% notification suppression via learned quality thresholds. Eight potentially patentable inventions identified.
+\end{itemize}
+
+{\sl Senior Research Scientist, Tech Lead} - Snowflake \hfill 05/23--10/25
+\begin{itemize} \itemsep -4pt
+\item Led team of 7 researchers building retrieval, extraction, and generation for Snowflake Cortex Search. Directed training of Arctic-Embed, open-source embedding models achieving SOTA retrieval accuracy with 20x lower inference cost than OpenAI/Cohere, via contrastive learning, hard-negative mining, and matryoshka dimension reduction.
+\item Implemented DPO-style preference optimization for search quality: when users flagged poor results, re-ran queries through larger models to generate proxy preference pairs (strong model output as chosen, weak model as rejected), aligning retrieval and summarization models without full RLHF infrastructure.
+\item Designed rigorous experimental methodology: ablation studies across training data mixtures, loss functions, and architectures with statistical significance testing on MTEB, BEIR, and internal benchmarks. Built Snowflake's research program (15 PhD interns, AI Fellowship with University of Waterloo).
+\end{itemize}
+
+{\sl Senior Research Scientist} - Neeva (Acquired by Snowflake) \hfill 12/22--05/23
+\begin{itemize} \itemsep -4pt
+\item Designed multi-phase LLM-powered retrieval pipeline from scratch: multi-vector retrieval, layout-aware document representations, and model cascading for production search.
+\item Built preference-based quality loop: user satisfaction signals drove proxy label generation (good $\rightarrow$ weaker model as rejected; bad $\rightarrow$ stronger model as chosen), enabling DPO-style alignment of summarization. Compressed summarization models from 7s to 300ms per batch via pruning and distillation.
+\end{itemize}
+
+{\sl Research Scientist Consultant} - Neural Magic, Walmart, Qualtrics \hfill 10/20--12/22
+\begin{itemize} \itemsep -4pt
+\item Pioneered web-scale model compression for search and NLP inference. At Neural Magic, developed second-order pruning methods (``The Optimal BERT Surgeon,'' EMNLP 2022, 216 citations) and sparse transfer learning (Sparse*BERT, oBERTa), achieving 30x CPU inference throughput with the DeepSparse engine---no accuracy loss.
+\item At Walmart, created CAPOT (Contrastive Alignment Post Training) improving dense retrieval on noisy queries by 55\% without retraining, and KALE (Kullback-Leibler Alignment of Embeddings) compressing bi-encoder retrieval models to 4x throughput via asymmetric post-training distillation. Both published at SustaiNLP/ACL 2023.
+\item At Qualtrics, compressed cross-lingual multi-task models (sentiment, emotion, actionability) across 12 languages via per-task distillation and quantization---90\% size reduction, 44\% inference cost savings. Published at IAAI 2023.
+\end{itemize}
+
+{\sl Applied Scientist / PM} - Microsoft Research \& AI, Bing \hfill 08/15--10/20
+\begin{itemize} \itemsep -4pt
+\item Created the MS MARCO dataset and benchmark suite (3,500+ citations, 10,000+ researchers), establishing the standard evaluation framework for neural information retrieval and machine comprehension. Designed evaluation methodology distinguishing genuine reasoning over evidence from shallow pattern matching.
+\item Co-founded the TREC Deep Learning Track (2018--2023), defining large-scale reusable test collections and evaluation protocols adopted across the retrieval community (500+ submissions).
+\item Architected Bing's real-time relevance metrics pipeline: novel stratified sampling (Horvitz-Thompson estimator), scaling to \$7M/year across 16 markets with 1M+ weekly quality judgments.
+\end{itemize}
+
+\section{Evaluation \& Benchmark Leadership}
+\begin{itemize} \itemsep -4pt
+\item {\sl TREC RAG Track} (2024--2026) - Co-organizer. Defined evaluation framework for retrieval-augmented generation: nugget-based fact extraction, support assessment comparing human vs. LLM judges, and AutoNuggetizer for automated RAG scoring.
+\item {\sl TREC Deep Learning Track} (2018--2023) - Co-organizer. Reusable large-scale test collections for neural retrieval. 1,000+ citations collectively.
+\item {\sl TREC Product Search Track} (2023--2025) - Principal coordinator.
+\end{itemize}
+
+\section{Select Publications (7,000+ total citations, h-index 24)}
+\begin{itemize} \itemsep -2pt
+    \item \href{https://arxiv.org/abs/1611.09268}{MS MARCO: A Human Generated MAchine Reading COmprehension Dataset} - P. Bajaj, \textbf{D. Campos}, N. Craswell et al. -- 3,500+ citations
+    \item \href{https://arxiv.org/abs/2405.05374}{Arctic-Embed: Scalable, Efficient, and Accurate Text Embedding Models} - L. Merrick, D. Xu, G. Nuti, \textbf{D. Campos} -- 2024
+    \item \href{https://arxiv.org/abs/2412.04506}{Arctic-Embed 2.0: Multilingual Retrieval Without Compromise} - P. Yu, L. Merrick, G. Nuti, \textbf{D. Campos} -- 2024
+    \item \href{https://arxiv.org/abs/2203.07259}{The Optimal BERT Surgeon: Scalable and Accurate Second-Order Pruning for LLMs} - E. Kurtic, \textbf{D. Campos} et al. -- EMNLP 2022
+    \item The Great Nugget Recall: Automating Fact Extraction and RAG Evaluation with LLMs - R. Pradeep et al., \textbf{D. Campos} -- SIGIR 2025
+    \item Inference Scaling for Bridging Retrieval and Augmented Generation - Y. Lee et al., \textbf{D. Campos} -- NAACL 2025
+    \item STUN: Structured-Then-Unstructured Pruning for Scalable MoE Pruning - J. Lee et al., \textbf{D. Campos} -- ACL 2025
+    \item \href{https://arxiv.org/abs/2411.04975}{SuffixDecoding: A Model-Free Approach to Speeding Up LLM Inference} - G. Oliaro, Z. Jia, \textbf{D. Campos}, A. Qiao -- NeurIPS 2024
+    \item Automating Generation of Long-Form Queries - S. Upadhyay, \textbf{D. Campos}, N. Thakur, R. Pradeep, N. Craswell, J. Lin -- SIGIR 2026
+    \item \href{https://arxiv.org/abs/2108.02170}{Curriculum Learning for Language Modeling} - \textbf{D. Campos} -- 2021 (methods now standard in LLM training)
+\end{itemize}
+\end{resume}
+\end{document}
+

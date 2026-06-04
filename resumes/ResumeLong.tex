@@ -1,0 +1,204 @@
+\documentclass[line,margin]{res} 
+\usepackage{hyperref}
+\begin{document}
+\name{Daniel Campos}
+\address{\href{mailto:daniel.campos@zipf.ai}{daniel.campos@zipf.ai} }
+\href{https://spacemanidol.com/}{https://spacemanidol.com/} | \href{https://scholar.google.com/citations?user=nlHptm8AAAAJ&hl=en}{Google Scholar} 
+\begin{resume}
+\section{EDUCATION}
+University of Illinois Urbana-Champaign(UIUC)- {\sl PhD Computer Science} 2020-2023 \\
+University of Washington- {\sl MS Computational Linguistics} 2018-2020 \\
+Rensselaer Polytechnic Institute- {\sl BS Computer Science} 2011-2014 
+\section{EXPERIENCE}
+{\sl Founder \& CEO} - Zipf AI \hfill 10/25-Present
+\begin{itemize} \itemsep -4pt
+\item Built an agentic research platform from 0 to 1---multi-agent communication architectures, retrieval-augmented pipelines, and autonomous research workflows serving enterprise customers in finance, real estate, and biotech.
+\item Scaled to production: FastAPI backend, multi-provider LLM orchestration (Claude, Gemini, OpenAI), async distributed workers on SQS, Kubernetes (EKS) with KEDA autoscaling, PostgreSQL, Redis, and S3.
+\item Designed workflow engine for persistent web monitoring agents with semantic change detection, structured extraction, and signal scoring---enabling M\&A signal detection, regulatory tracking, and competitive intelligence.
+\end{itemize}
+{\sl LLM \& Agentic Strategy Consultant} - AlphaSense, Wex Inc \hfill 08/23-08/24
+\begin{itemize} \itemsep -4pt
+\item Advised on LLM strategy, agentic system design, and AI-powered research workflows for financial intelligence and enterprise platforms.
+\end{itemize}
+{\sl Senior Research Scientist, Tech Lead} - Snowflake \hfill 05/23-10/25
+\begin{itemize}  \itemsep -4pt 
+\item Led team of 7 researchers building retrieval, extraction, and generation systems for Snowflake Cortex Search. Shipped Arctic-Embed, a family of open-source embedding models achieving state-of-the-art retrieval accuracy with 20x lower inference costs than OpenAI and Cohere.
+\item Drove research partnerships with NVIDIA, Voyage, and Contextual AI for embedding models and RAG workflows, translating cutting-edge research into production systems serving enterprise customers.
+\item Built Snowflake's research internship program from zero to 15 PhD interns and launched the Snowflake AI Fellowship with the University of Waterloo. 
+\end{itemize}
+{\sl Senior Research Scientist} - Neeva (Acquired by Snowflake) \hfill  12/22-05/23
+\begin{itemize}  \itemsep -4pt 
+\item Trained, compressed, and deployed summarization, retrieval, and comprehension LLMs for search.
+\item Compressed and optimized web summarization models using pruning, knowledge distillation, faster transformers, and pseudo labeling, bringing latency down from 7 seconds to 300ms on a batch of 10.
+\item Led a comprehensive transformation of the search stack, designing a multi-phase retrieval pipeline from the ground up. Implemented state-of-the-art modeling approaches, including multi-vector retrieval, layout-aware representations, and model and index cascading.
+\end{itemize}
+{\sl Research Scientist Consultant} - Neural Magic \hfill  10/2020-12/22
+\begin{itemize}  \itemsep -4pt 
+\item Developed novel compression methods for NLP systems inference around Question Answering, Summarization, and Information Retrieval using PyTorch, Hugging-Face, and SparseML and leveraging quantization, structured pruning, unstructured pruning, and knowledge distillation. 
+\item Compressed models,  when combined with the DeepSparse inference engine, resulted in over 30x inference throughput on CPU. 
+\item Compressed bi-encoder Dense Retrieval Model to deliver 4x speedup with no loss in accuracy.
+\item Developed method of transferring sparse model performance to domains like BioMedical with no additional hyperparameter tuning.
+\end{itemize}
+{\sl Applied Scientist Consultant}- Walmart Labs \hfill 06/2022-12/2022
+\begin{itemize}  \itemsep -4pt 
+\item Developed \textbf{C}onstrastive \textbf{A}lignment \textbf{Po}st \textbf{T}raining (CAPOT), a method for improving retrieval on noisy queries without index regeneration or retraining. CAPOT improved retrieval accuracy on noisy queries by 55 \% while requiring less than an hour on a single GPU.
+\item Developed \textbf{K}ullback–Leibler \textbf{Al}ignment of \textbf{E}mbeddings (KALE), a post-training bi-encoder compression approach which leverages asymmetrical bi-encoders to deliver 4x the throughput with minimal losses in accuracy. 
+\end{itemize}
+{\sl Applied Scientist Consultant}- Qualtrics \hfill 03/2022-06/2022
+\begin{itemize}  \itemsep -4pt 
+\item Scaled sentiment analysis, action ability, and emotion detection models to 12 languages and leveraged per task Knowledge Distillation and Quantization to decrease the model size by 90\%, saving 44\% on inference cost. 
+\end{itemize}
+{\sl Research Scientist Consultant}- Mendel AI \hfill 10/2021-03/2022
+\begin{itemize}  \itemsep -4pt 
+\item Redesigned, built, and deployed Oncology Relation and Entity Extraction pipelines using Transformers and custom language models, delivering a 35\% improvement in F1 over existing LSTM models with 10x faster inference
+\end{itemize}
+{\sl Senior AI Product Manager}-Microsoft Research \& AI,  Bing  \hfill 11/2017-10/2020
+\begin{itemize}  \itemsep -4pt 
+\item Architected relevance metrics stack into a real-time streaming system through new human labeling tasks, novel data sampling methods, and metrics aggregation. Labeling scaled to \$7m/year across 16 markets, generating more than 1,000,000 weekly judgments. The pipeline went from measuring user experience years old to seconds old. To scale the pipeline, created a novel multi-class-stratified sampling method using the Horvitz-Thompson estimator.
+\item  Built family of MSMARCO Datasets and baselines including QnA, Passage Ranking, and Keyphrase Extraction, which collectively have been used by over 10,000 Researchers. Papers cited over 3,500 times and competitive datasets with over 500 research submissions. Dataset creation using Pandas and baselines models built in PyTorch and TensorFlow.
+\item Research and analyzed search relevance and user experience for the executive team across various verticals, languages, and metrics using language embeddings, sampling methodologies, and classification methods. Analysis and visualization were done through tSNE, Pandas, Numpy, ANNOY, and Plotly.
+\end{itemize}
+{\sl Product Manager 2}-Microsoft Cloud + AI, Global Services \hfill 05/2016-11/2017
+\begin{itemize}  \itemsep -4pt
+\item Designed, built, and deployed Neural Machine Translation(NMT) into a software localization pipeline for all Cloud and Enterprise Microsoft products. Using the NMT models, supplier contracts were renegotiated, saving $20\%$  \$3m/year over the next three years.
+\item Optimized and scaled the NLP system for customer feedback translation, filtering, and categorization, decreasing team effort by $80\%$ using NLTK, Tensorflow, and sci-kit-learn.
+\item Drove end-to-end localization and internationalization for Azure and Visual Studio products, including automation, bug triage, budgeting, vendor, and release management for \$4m/year worth of translations.
+\end{itemize}
+{\sl Product Manager}-Microsoft, Azure RemoteApp  \hfill Summer 2014 \& 08/2015-05/2015
+\begin{itemize}  \itemsep -4pt
+\item Designed scalable multi-cloud network architecture for cloud-based Remote Desktop Service and drove large-scale deployment to alpha customers and Microsoft.
+\item Created and scaled a predictive user demand modeling pipeline that optimized VM usage by 20\%.
+\end{itemize}
+{\sl NLP Research Scientist}-Basis Technology \hfill 01/2014-06/2014
+\begin{itemize}  \itemsep -4pt
+\item Grew the Rosette Entity Resolution pipeline to decrease document analysis time, increase accuracy, and increase throughput while expanding language support to Spanish, Russian, French, Farsi, and Chinese.
+\item Re-designed the system's machine-learned architecture to state-of-the-art neural methods, which improved multilingual accuracy to English parity.
+\item Formalized data creation, data ingestion, retrieval, formatting, and analysis pipeline using Bash, Java, and Python primarily. Optimized models were ANN, KNN, SVMs, LSTMs, and Decision Trees.
+\end{itemize}
+{\sl Software Engineer}-Cisco Systems \hfill Summer 2013
+\begin{itemize}  \itemsep -4pt
+\item Developed JavaScript tooling for collecting user feedback, bug tracking, and HTML5-based screenshots used with alpha customers during initial product launches. 
+\item Led a team of 12 other interns to develop a novel food ordering system for cafeterias that used containerized Node.js and MongoDB applications, allowing efficient scaling.
+\end{itemize}
+{\sl Co-Founder/Software Engineer}- Gapelia \hfill 08/2013-05/2014
+\begin{itemize}  \itemsep -4pt
+\item Built an end-to-end digital multi-modal publishing platform that allowed non-technical users to create and publish beautiful digital magazines in minutes.
+\item Created REST API in Java, front end in Express, and deployed in AWS with Apache Tomcat, Maven, and MongoDB.
+\item Won the RPI 2014 Business Model Competition 1st place, 2014 Why not Change the World grant, Harvard iLab cultural entrepreneurship challenge, and was a member of Harvard's Innovation Lab 01/2014-05/2014.
+\end{itemize}
+{\sl Software Engineer}-GE Capital \hfill Summer 2012
+\begin{itemize}  \itemsep -4pt
+\item Developed a reusable web system in Bootstrap, Javascript, and PHP, allowing GE employees to create websites that matched corporate guidelines around colors, fonts, icons, etc.
+\end{itemize}
+\section{Publications (7,000+ total citations, h-index 24)}
+\subsection{2026}
+\begin{itemize}
+    \item Automating Generation of Long-Form Queries - Shivani Upadhyay, \textbf{Daniel Campos}, Nandan Thakur, Ronak Pradeep, Nick Craswell, Jimmy Lin - SIGIR 2026
+    \item \href{https://arxiv.org/abs/2603.09891}{Overview of the TREC 2025 Retrieval Augmented Generation (RAG) Track} - Shivani Upadhyay, Nandan Thakur, Ronak Pradeep, Nick Craswell, \textbf{Daniel Campos}, Jimmy Lin - TREC 2025
+    \item \href{https://arxiv.org/abs/2411.04975}{SuffixDecoding: Extreme Speculative Decoding for Emerging AI Applications} - Gabriele Oliaro, Zhihao Jia, \textbf{Daniel Campos}, Aurick Qiao - NeurIPS 2024
+\end{itemize}
+\subsection{2025}
+\begin{itemize}
+    \item \href{https://arxiv.org/abs/2504.15068}{The Great Nugget Recall: Automating Fact Extraction and RAG Evaluation with Large Language Models} - Ronak Pradeep, Nandan Thakur, Shivani Upadhyay, \textbf{Daniel Campos}, Nick Craswell, Ian Soboroff, Jimmy Lin - SIGIR 2025
+    \item A Large-Scale Study of Relevance Assessments with Large Language Models Using UMBRELA - Shivani Upadhyay, Ronak Pradeep, Nandan Thakur, \textbf{Daniel Campos}, Nick Craswell, Ian Soboroff, Jimmy Lin - SIGIR 2025
+    \item Assessing Support for the TREC 2024 RAG Track: A Large-Scale Comparative Study of LLM and Human Evaluations - Nandan Thakur, Ronak Pradeep, Shivani Upadhyay, \textbf{Daniel Campos}, Nick Craswell, Ian Soboroff, Jimmy Lin - SIGIR 2025
+    \item STUN: Structured-Then-Unstructured Pruning for Scalable MoE Pruning - Jaeseong Lee, Seung-won Hwang, Aurick Qiao, \textbf{Daniel F Campos}, Zhewei Yao, Yuxiong He - ACL 2025
+    \item TALE: Token-Adaptive Low-Rank KVCache Approximation with Reconstruction Elimination - Jaeseong Lee, Seung-won Hwang, Aurick Qiao, \textbf{Daniel Campos}, Zhewei Yao, Yuxiong He - TACL 2025
+    \item Inference Scaling for Bridging Retrieval and Augmented Generation - Yongho Lee, Seung-won Hwang, \textbf{Daniel F Campos}, Filip Gralinski, Zhewei Yao, Yuxiong He - NAACL 2025
+    \item CORD: Balancing COnsistency and Rank Distillation for Robust Retrieval-Augmented Generation - Yongho Lee, Seung-won Hwang, \textbf{Daniel F Campos}, Filip Gralinski, Zhewei Yao, Yuxiong He - NAACL 2025
+    \item \href{https://arxiv.org/abs/2406.16828}{Ragnarök: A Reusable RAG Framework and Baselines for TREC 2024 Retrieval-Augmented Generation Track} - Ronak Pradeep, Nandan Thakur, Sahel Sharifymoghaddam, Eric Zhang, Ryan Nguyen, \textbf{Daniel Campos}, Nick Craswell, Jimmy Lin - ECIR 2025
+    \item ColBERT-serve: Efficient Multi-Stage Memory-Mapped Scoring - Kevin Huang, Tathagat Venkatesh, Uday Dingankar, Antonio Mallia, \textbf{Daniel Campos}, Jingwei Jiao, Chris Potts, Omar Khattab - ECIR 2025
+    \item \href{https://arxiv.org/abs/2505.00263}{EnronQA: Towards Personalized RAG over Private Documents} - Matthew J. Ryan, Danmei Xu, Corey Nivera, \textbf{Daniel Campos} - 2025
+\end{itemize}
+\subsection{2024}
+\begin{itemize}
+    \item \href{https://arxiv.org/abs/2412.04506}{Arctic-Embed 2.0: Multilingual Retrieval Without Compromise} - Puxuan Yu, Luke Merrick, Gaurav Nuti, \textbf{Daniel Campos} - Arxiv Preprint
+    \item \href{https://arxiv.org/abs/2405.07767}{Synthetic Test Collections for Retrieval Evaluation} - Hossein A. Rahmani, Nick Craswell, Emine Yilmaz, Bhaskar Mitra, \textbf{Daniel Campos} -  \href{https://sigir-2024.github.io/index.html}{In Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval}
+    \item \href{https://arxiv.org/abs/2405.05374}{Arctic-Embed: Scalable, Efficient, and Accurate Text Embedding Models} - Luke Merrick, Danmei Xu, Gaurav Nuti, \textbf{Daniel Campos} - Arxiv Preprint
+\end{itemize}
+\subsection{2023}
+\begin{itemize}
+    \item \href{https://www.ideals.illinois.edu/items/128691}{EFFICIENT AND ROBUST WEB SCALE LANGUAGE MODEL BASED RETRIEVAL, GENERATION, AND UNDERSTANDING} - University of Illinois Urbana-Champaign Computer Science Doctoral Thesis
+    \item \href{https://arxiv.org/abs/2311.07861}{Overview of the TREC 2023 Product Product Search Track} - \textbf{Daniel Campos}, Surya Kallumadi, Corby Rosset, Cheng Xiang Zhai, Alessandro Magnani - \href{https://trec.nist.gov/tracks.html}{TREC 2023}
+    \item \href{https://arxiv.org/abs/2304.03401}{Noise-Robust Dense Retrieval via Contrastive Alignment Post Training} - \textbf{Daniel Campos}, ChengXiang Zhai, Alessandro Magnani - Arxiv Preprint
+    \item \href{https://www.microsoft.com/en-us/research/publication/overview-of-the-trec-2022-deep-learning-track/}{Overview of the TREC 2022 deep learning track} - Nick Craswell, Bhaskar Mitra, Emine Yilmaz, \textbf{Daniel Campos}, Jimmy Lin, Ellen M. Voorhees, and Ian Soboroff - \href{https://trec.nist.gov/tracks.html}{TREC 2022}
+    \item \href{https://arxiv.org/abs/2304.02721}{To Asymmetry and Beyond: Structured Pruning of Sequence to Sequence Models for Improved Inference Efficiency}  \textbf{Daniel Campos}, ChengXiang Zhai - \href{https://sites.google.com/view/sustainlp2023/home?authuser=0}{SustaiNLP 2023 
+Fourth Workshop on Simple and Efficient Natural Language Processing} at \href{https://2023.aclweb.org/}{ACL 2023} 
+    \item \href{https://arxiv.org/abs/2304.01016}{Quick Dense Retrievers Consume KALE: Post Training Kullback Leibler Alignment of Embeddings for Asymmetrical dual encoders} - \textbf{Daniel Campos}, ChengXiang Zhai, Alessandro Magnani - \href{https://sites.google.com/view/sustainlp2023/home?authuser=0}{SustaiNLP 2023 
+Fourth Workshop on Simple and Efficient Natural Language Processing} at \href{https://2023.aclweb.org/}{ACL 2023} 
+    \item \href{https://arxiv.org/abs/2304.00114}{Dense Sparse Retrieval: Using Sparse Language Models for Inference Efficient Dense Retrieval} - \textbf{Daniel Campos}, ChengXiang Zhai - Arxiv Preprint
+    \item \href{https://arxiv.org/abs/2303.17612}{oBERTa: Improving Sparse Transfer Learning via improved initialization, distillation, and pruning regimes} - \textbf{Daniel Campos}, Alexandre Marques, Tuan Nguyen, Mark Kurtz, ChengXiang Zhai - \href{https://sites.google.com/view/sustainlp2023/home?authuser=0}{SustaiNLP 2023 
+Fourth Workshop on Simple and Efficient Natural Language Processing} at \href{https://2023.aclweb.org/}{ACL 2023} 
+    \item \href{https://arxiv.org/abs/2211.15927}{Compressing Cross-Lingual Multi-task Models at Qualtrics} - \textbf{Daniel Campos}, Daniel Perry, Samir Joshi, Yashmeet Gambhir, Wei Du, Zhengzheng Xing, and Aaron Colak - \href{https://aaai.org/Conferences/AAAI-23/iaai-23-call/}{The Thirty-Fifth Annual Conference on Innovative Applications of Artificial Intelligence (IAAI-23)}
+\end{itemize}
+\subsection{2022}
+\begin{itemize}
+    \item \href{https://arxiv.org/abs/2203.07259}{The Optimal BERT Surgeon: Scalable and Accurate Second-Order Pruning for Large Language Models} - Eldar Kurtic, \textbf{Daniel Campos}, Tuan Nguyen, Elias Frantar, Mark Kurtz, Benjamin Fineran, Michael Goin, Dan Alistarh - \href{https://2022.emnlp.org/}{EMNLP 2022}
+    \item \href{https://arxiv.org/abs/2211.15927}{Compressing Cross-Lingual Multi-task Models at Qualtrics} - \textbf{Daniel Campos}, Daniel Perry, Samir Joshi, Yashmeet Gambhir, Wei Du, Zhengzheng Xing, and Aaron Colak - Arxiv Preprint
+    \item \href{https://arxiv.org/abs/2205.12452}{Sparse*BERT: Sparse Models are Robust} - \textbf{Daniel Campos}, Alexandre Marques, Tuan Nguyen, Mark Kurtz, ChengXiang Zhai - \href{https://sites.google.com/view/sparsity-workshop-2022}{Sparsity in Neural Networks Workshop} at \href{https://icml.cc/Conferences/2022}{ICML 2022}
+    \item \href{https://www.microsoft.com/en-us/research/publication/fostering-coopetition-while-plugging-leaks-the-design-and-implementation-of-the-ms-marco-leaderboards/}{Fostering Coopetition While Plugging Leaks: The Design and Implementation of the MS MARCO Leaderboards} - Jimmy Lin, \textbf{Daniel Campos}, Nick Craswell, Bhaskar Mitra, Emine Yilmaz - \href{https://sigir.org/sigir2022/}{SIGIR 2022}
+\end{itemize}
+\subsection{2021}
+\begin{itemize}
+    \item \href{https://www.microsoft.com/en-us/research/uploads/prod/2022/05/trec2021-deeplearning-overview.pdf}{Overview of the TREC 2021 deep learning track} - Nick Craswell, Bhaskar Mitra, Emine Yilmaz, \textbf{Daniel Campos} - \href{https://trec.nist.gov/tracks.html}{TREC 2021}
+    \item \href{https://arxiv.org/abs/2109.04202}{IMG2SMI: Translating Molecular Structure Images to Simplified Molecular-input Line-entry System} - \textbf{Daniel Campos}, Heng Ji - Arxiv Preprint
+    \item \href{https://arxiv.org/abs/2108.02170}{Curriculum learning for language modeling} - \textbf{Daniel Campos} - Arxiv Preprint
+    \item \href{https://arxiv.org/abs/2104.09399}{TREC Deep Learning Track: Reusable Test Collections in the Large Data Regime} - Nick Craswell, Bhaskar Mitra, Emine Yilmaz, \textbf{Daniel Campos}, Ellen Voorhees and Ian Soboroff - \href{https://sigir.org/sigir2021/}{SIGIR 2021}
+    \item \href{https://dl.acm.org/doi/10.1145/3404835.3462804}{MS MARCO: Benchmarking Ranking Models in the Large-Data Regime} -  Nick Craswell, Bhaskar Mitra, Emine Yilmaz, \textbf{Daniel Campos}, Jimmy Lin - \href{https://sigir.org/sigir2021/}{SIGIR 2021}
+    \item \href{https://arxiv.org/abs/2102.12887}{Significant Improvements over the State of the Art? A Case Study of the MS MARCO Document Ranking Leaderboard} - Jimmy Lin, \textbf{Daniel Campos}, Nick Craswell, Bhaskar Mitra, Emine Yilmaz  - \href{https://sigir.org/sigir2021/}{SIGIR 2021}
+    \item \href{https://trec.nist.gov/pubs/trec29/papers/OVERVIEW.DL.pdf}{Overview of the TREC 2020 deep learning track} - Nick Craswell, Bhaskar Mitra, Emine Yilmaz, \textbf{Daniel Campos} - \href{https://trec.nist.gov/tracks.html}{TREC 2020}
+\end{itemize}
+\subsection{2020}
+\begin{itemize}
+    \item \href{https://spacemanidol.github.io/cv/UWTHESIS.pdf}{Explorations In Curriculum Learning Methods For Training Language Models} - University of Washington Computational Linguistics Master's Thesis
+    \item \href{https://research.yyx.me/publications/tac2020.pdf}{GAIA at SM-KBP 2020 - A Dockerized Multi-media Multi-lingual Knowledge Extraction, Clustering, Temporal Tracking and Hypothesis Generation System} - Manling Li, Ying Lin, Tuan Manh Lai, Xiaoman Pan, Haoyang Wen, Sha Li, Zhenhailong Wang, Pengfei Yu, Lifu Huang, Di Lu, Qingyun Wang, Haoran Zhang, Qi Zeng, Chi Han, Zixuan Zhang, Yujia Qin, Xiaodan Hu, Nikolaus Parulian, \textbf{Daniel Campos}, Heng Ji, Brian Chen, Xudong Lin, Alireza Zareian, Amith Ananthram, Emily Allaway, Shih-Fu Chang, Kathleen McKeown, Yixiang Yao, Michael Spector, Mitchell DeHaven, Daniel Napierski, Marjorie Freedman, Pedro Szekely, Haidong Zhu, Ram Nevatia, Yang Bai, Yifan Wang, Ali Sadeghian, Haodi Ma, Daisy Zhe Wang - \href{tac.nist.gov}{Proceedings of Thirteenth Text Analysis Conference 2020}
+    \item \href{https://arxiv.org/abs/2006.05324}{ORCAS: 18 Million Clicked Query-Document Pairs for Analyzing Search} - Nick Craswell, \textbf{Daniel Campos}, Bhaskar Mitra, Emine Yilmaz, Bodo Billerbeck- \href{https://www.cikm2020.org/}{CIKM 2020}
+    \item \href{https://arxiv.org/abs/2004.01401}{XGLUE: A New Benchmark Dataset for Cross-lingual Pre-training, Understanding and Generation} - Yaobo Liang, Nan Duan, Yeyun Gong, Ning Wu, Fenfei Guo, Weizhen Qi, Ming Gong, Linjun Shou, Daxin Jiang, Guihong Cao, Xiaodong Fan, Ruofei Zhang, Rahul Agrawal, Edward Cui, Sining Wei, Taroon Bharti, Ying Qiao, Jiun-Hung Chen, Winnie Wu, Shuguang Liu, Fan Yang, \textbf{Daniel Campos}, Rangan Majumder, Ming Zhou - \href{https://2020.emnlp.org/}{EMNLP 2020}
+    \item \href{https://arxiv.org/pdf/2004.13486.pdf}{On the Reliability of Test Collections to Evaluating Systems of Different Types} - Emine Yilmaz, Nick Craswell, Bhaskar Mitra and \textbf{Daniel Campos} - \href{https://sigir.org/sigir2020/}{SIGIR} 
+    \item \href{https://arxiv.org/abs/2003.07820}{Overview of the TREC 2019 deep learning track} Nick Craswell, Bhaskar Mitra, Emine Yilmaz, \textbf{Daniel Campos}, Ellen M. Voorhees, - \href{https://trec.nist.gov/tracks.html}{TREC 2019}
+	\item \href{https://www.microsoft.com/en-us/research/publication/leading-conversational-search-by-suggesting-useful-questions/}{Leading Conversational Search by Suggesting Useful Questions} Corbin Rosset, Chenyan Xiong, Xia Song, \textbf{Daniel Campos}, Nick Craswell, Saurabh Tiwary and Paul Bennett - \href{https://www2020.thewebconf.org/}{WWW 2020}
+\end{itemize}
+\subsection{2019}
+    \begin{itemize}
+    \item \href{https://arxiv.org/abs/1911.02671}{Open Domain Web Keyphrase Extraction Beyond Language Modeling} - Lee Xiong, Chuan Hu, Chenyan Xiong, \textbf{Daniel Campos}, Arnold Overwijk and Xiayu Huang - \href{https://www.emnlp-ijcnlp2019.org/}{EMNLP 2019}
+    \item \href{https://arxiv.org/abs/2003.07820}{Overview of the TREC 2019 deep learning track} Nick Craswell, Bhaskar Mitra, Emine Yilmaz, \textbf{Daniel Campos}, Ellen M. Voorhees, - \href{https://trec.nist.gov/tracks.html}{TREC 2019}
+    \end{itemize}
+\subsection{2018}
+    \begin{itemize}
+    \item \href{https://arxiv.org/abs/1611.09268}{MS MARCO: A Human Generated MAchine Reading COmprehension Dataset} Payal Bajaj, \textbf{Daniel Campos}, Nick Craswell, Li Deng, Jianfeng Gao, Xiaodong Liu, Rangan Majumder, Andrew McNamara, Bhaskar Mitra, Tri Nguyen, Mir Rosenberg, Xia Song, Alina Stoica, Saurabh Tiwary, Tong Wang 
+    \end{itemize}
+\section{Awards and Research Activities}
+\subsection{Fellowships}
+\begin{itemize}
+    \item \href{https://www.fellowship.rippleventures.com/fellowship-program}{Ripple X Fellow Summer 2022}
+    \item \href{https://www.zfellows.com/}{Z Fellow Jan 2022}
+    \item \href{https://cs.illinois.edu/about/awards/graduate-fellowships-awards/computer-science-gene-golub-fellowship}{Gene Golub FELLOWSHIP at UIUC 2020-2021}
+    \item \href{https://grad.illinois.edu/diversity/spi}{Summer Predoctoral Institute Fellow at UIUC 2020}
+\end{itemize}
+\subsection{Patents}
+\begin{itemize}
+    \item  \href{https://www.freepatentsonline.com/y2024/0281446.html}{Enhanced Searching Using Fine-Tuned Machine Learning Models} - U.S. Appln. No. 18/443838 - Filed 02/16/2024
+    \item \href{https://www.freepatentsonline.com/y2024/0281487.html}{Enhanced Search Result Generation Using Multi-Document Summarization} - U.S. Appln. No. 18/443838 Filed 02/16/2024
+    \item \href{https://patentimages.storage.googleapis.com/3f/e0/ad/fac04c3864220a/US20210326742A1.pdf}{Using a Multi-Task-Trained Neural Network to Guide Interaction with a Query-Processing System via Useful Suggestions}- 408364-US-NP - Filed 4/16/2020 - Granted  2023-12-26
+    \item \href{https://patentimages.storage.googleapis.com/67/6d/6a/b27e27d03b8662/US11657223.pdf}{Keyphrase Extraction Beyond Language Modeling} - U.S. Appln. No. 16/460,853 - Filed July 2nd, 2019 - Granted 2023-05-23
+\end{itemize}
+\subsection{Activity and Invited Talks/Lectures}
+\begin{itemize} 
+\item \href{https://sigir-ecom.github.io/ecom2023/index.html}{Invited Talk: Benchmarking End to End Product Retrieval at The 2023 SIGIR Workshop On eCommerce}
+\item \href{https://home.mlops.community/public/events/llm-in-prod-part-ii-2023-06-20}{Invited Talk: Making LLM Inference Affordable at the 2023 LLMs in Production Conference II}
+\item \href{https://vita-group.github.io/group.html}{Invited Lecture on Unstructured Pruning at UT Austin's VITA} 
+\item \href{https://courses.grainger.illinois.edu/cs510/sp2023/}{Guest Lecture on Conversational Information Retrieval at UIUC's Advanced Methods of Information Retrieval} 
+\item \href{https://courses.grainger.illinois.edu/cs510/sp2023/}{Guest Lecture on Neural Information Retrieval at UIUC's Advanced Methods of Information Retrieval} 
+\item \href{https://home.mlops.community/public/events/llms-in-production-conference-2023-04-13}{Invited Panelist on Cost Optimization and Performance at the 2023 LLMs in Production Conference}
+\item  \href{https://trec-rag.github.io/}{NIST TREC 2024-2026 RAG Track}-Co-organizer
+\item  \href{https://trec.nist.gov/pubs/call2020.html}{NIST TREC 2023-2025 Product Search}-Principal Track Coordinator
+\item  \href{https://trec.nist.gov/pubs/call2020.html}{NIST TREC 2018-2023 Deep Learning}-Track Coordinator
+\item \href{http://sigir.org/afirm2020/}{AACM SIGIR/SIGKDD Africa Summer School on Machine Learning for Data Mining and Search 2019,2020}-Invited Lecturer for Deep Learning in Search
+\item  
+\href{https://cs.illinois.edu/academics/courses/cs510}{CS 510: Advanced Information Retrieval}-Fall 2022 Teaching Assistant 
+\href{https://cs.illinois.edu/academics/courses/cs410}{CS 410: Information Retrieval}-Fall 2022 Teaching Assistant 
+\item  
+\href{https://cs.illinois.edu/academics/courses/cs124}{CS 124: Introduction to Computer Science}-Spring 2022 Teaching Assistant
+\end{itemize}
+\end{resume}
+\end{document}
